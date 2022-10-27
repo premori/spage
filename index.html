@@ -2,9 +2,8 @@
 <html lang="ru" crosspilot=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
     <title>S.page</title>
     <style type="text/css"></style>
-    <link rel="stylesheet" href="./S.page_files/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./S.page_files/custom.css">
-    <link rel="icon" type="image/png" href="./S.page_files/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <meta name="description" content="starter page for browse">
     <meta name="author" content="premori">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,462 +11,134 @@
     <meta name="yandex-verification" content="8fcc469b08cfb89b">
 </head>
 
-<body>       
-        <!--https://4567q.github.io/starter.page/# предедущая версия-->
+<body>      
 
-    <script type="text/javascript">
-    
-    function zero_first_format(value)
-    {
-        if (value < 10)
-        {
-            value='0'+value;
-        }
-        return value;
-    }
+<div class="container">
+   <h4>S/Page</h4>
 
-    function date_time()
-    {
-        var current_datetime = new Date();
-        var day = zero_first_format(current_datetime.getDate());
-        var month = zero_first_format(current_datetime.getMonth()+1);
-        var year = current_datetime.getFullYear();
-        var hours = zero_first_format(current_datetime.getHours());
-        var minutes = zero_first_format(current_datetime.getMinutes());
-        var seconds = zero_first_format(current_datetime.getSeconds());
+    <div class="row">
+      <div class="col">
+        <ul class="list-group">
+          <li class="list-group-item"><b>Social apps</b></li>
+          <li class="list-group-item"><a class="button" href="https://vk.com/" target="_blank" style="text-decoration: none;">Вконтакте</a></li>
+          <li class="list-group-item"><a class="button" href="https://www.instagram.com/?hl=ru" target="_blank" style="text-decoration: none;">
+          Intstagram</a></li>
+          <li class="list-group-item"><a class="button" href="https://web.telegram.org/#/login" target="_blank" style="text-decoration: none;">
+          Telegram</a></li>
+          <li class="list-group-item"><a class="button" href="https://2ch.hk/" target="_blank" style="text-decoration: none;">Двач</a></li>
+          <li class="list-group-item"><a class="button" href="https://web.whatsapp.com/" target="_blank" style="text-decoration: none;">Whatsapp</a></li>
+        </ul>
 
-        return day+"."+month+"."+year+" "+hours+":"+minutes+":"+seconds;
-    }
-    
-    setInterval(function () {
-        document.getElementById('current_date_time_block2').innerHTML = date_time();
-    }, 1000);
-    </script>
+    </div>
+    <div class="col">
+        <ul class="list-group">
+          <li class="list-group-item"><b>Fun</b></li>
+          <li class="list-group-item"><a class="button" href="https://www.kinopoisk.ru/" target="_blank" style="text-decoration: none;">kinopoisk</a></li>
+          <li class="list-group-item"><a class="button" href="https://jut.su/anime/order-by-count/" target="_blank" style="text-decoration: none;">
+          jut.su</a></li>
+          <li class="list-group-item"><a class="button" href="https://animego.org/" target="_blank" style="text-decoration: none;">Animego</a></li>
+          <li class="list-group-item"><a class="button" href="http://film50.zagonko.org/6" target="_blank" style="text-decoration: none;">Zagonka</a></li>
+          <li class="list-group-item"> <a class="button" href="https://www.youtube.com/" target="_blank" style="text-decoration: none;">YouTube</a></li>
+        </ul>
 
-        <div id="page_container" class="container pageEntry">
-        <div class="row">    
-        <div class="col-sm">
-        <div class="card mb-3">
-        <div class="card-header"><center><span style="color: #fff;" id="current_date_time_block2"></span></center></div>
-        <div class="card-body">
-        <!------------------------->
-        
-        <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
-		    <div class="col">
-             
-        <a class="button" href="https://vk.com/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/vk_32x32.png" class="rounded-0">
-        <span>vk</span> 
-        </div>
-        </a>
-		    </div>
+    </div>
+    <div class="col">
+        <ul class="list-group">
+          <li class="list-group-item"><b>Game</b></li>
+          <li class="list-group-item"> <a class="button" href="https://wowcircle.net/" target="_blank" style="text-decoration: none;">WoWCircle</a></li>
+          <li class="list-group-item"><a class="button" href="https://sirus.su/#/" target="_blank" style="text-decoration: none;">WoWSirus</a></li>
+          <li class="list-group-item"><a class="button" href="https://store.steampowered.com/?l=russian" target="_blank" style="text-decoration: none;">Steam</a></li>
+        </ul>
+    </div>
+</div>
 
-		    <div class="col">
-        <a class="button" href="https://www.instagram.com/?hl=ru" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/ins_32x32.png" class="rounded-0">
-        <span>inst</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://web.telegram.org/#/login" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/tg_32x32.png" class="rounded-0">
-        <span>Telegram</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://2ch.hk/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/dv_32x32.png" class="rounded-0">
-        <span>2ch.hk</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://soundcloud.com/premori" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/sc_32x32.png" class="rounded-0">
-        <span>SC</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://www.looperman.com/loops" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/lp_32x32.png" class="rounded-0">
-        <span>lman</span>
-        </div>
-        </a> 
-
-		    </div>
-        </div>
-        </div>
-
-        <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
-		    <div class="col">     
-        <a class="button" href="http://192.168.0.1/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/tl_32x32.png" class="rounded-0">
-        <span>TPlink</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://findclone.ru/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/fc_32x32.png" class="rounded-0">
-        <span>FClone</span>   
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://github.com/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/gh_32x32.png" class="rounded-0">
-        <span>GitHub</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://qiwi.com/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">    
-        <img src="./S.page_files/qw_32x32.png" class="rounded-0">
-        <span>Qiwi</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://online-audio-converter.com/ru/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/acn_32x32.png" class="rounded-0">
-        <span>AudioC</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://yandex.ru/maps/225/russia/?l=sat%2Cskl&amp;ll=99.505405%2C61.698653&amp;z=3" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/ym_32x32.png" class="rounded-0">
-        <span>YMaps</span>
-        </div>
-        </a>
-		    </div>
-        </div>
-        </div>
-
-        <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
-		    <div class="col">  
-        <a class="button" href="https://www.google.ru/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/gl_32x32.png" class="rounded-0">
-        <span>Google</span>         
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://e.mail.ru/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/mr_32x32.png" class="rounded-0">
-        <span>Mail.ru</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://www.youtube.com/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">    
-        <img src="./S.page_files/yt_32x32.png" class="rounded-0">
-        <span>YouTube</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://store.steampowered.com/?l=russian" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/st_32x32.png" class="rounded-0">
-        <span>Steam</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://yougame.biz/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/yg_32x32.png" class="rounded-0">
-        <span>YouGame</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://online.sberbank.ru/CSAFront/index.do#/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/sb_32x32.png" class="rounded-0">
-        <span>Sber</span>
-        </div>
-        </a>
-		    </div>
-
-        </div>
-        </div>
-        
-
-        <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
-		    <div class="col">
-        <a class="button" href="https://temp-mail.org/ru/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/tm_32x32.png" class="rounded-0">
-        <span>T.mail</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://ytmonster.ru/dashboard/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/ytm_32x32.png" class="rounded-0">
-        <span>YTmonst</span>   
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://lolz.guru/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/lolz.png" class="rounded-0">
-        <span>lolz</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://dedic.store/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/ds_32x32.png" class="rounded-0">
-        <span>Dedic.S</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://yoomoney.ru/actions" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/md_32x32.png" class="rounded-0">
-        <span>Юmoney</span>
-        </div>
-        </a>
-		    </div>
-
-		    <div class="col">
-        <a class="button" href="https://www.figma.com/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/fm_32x32.png" class="rounded-0" width="32" height="32">
-        <span>figma</span>
-        </div>
-        </a>
-		    </div>
-        </div>
-        </div>
-
-        <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
+    <div class="row">
         <div class="col">
-        <a class="button" href="http://film50.zagonko.org/6" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/zg_32x32.png" class="rounded-0">
-        <span>Zagonka</span>
-        </div>
-        </a>
-        </div>
+        <ul class="list-group">
+          <li class="list-group-item"><b>Online banking</b></li>
+          <li class="list-group-item"><a class="button" href="https://online.sberbank.ru/CSAFront/index.do#/" target="_blank" style="text-decoration: none;">
+              СберБанк
+          </a></li>
+          <li class="list-group-item"><a class="button" href="https://qiwi.com/" target="_blank" style="text-decoration: none;">Qiwi</a></li>
+          <li class="list-group-item"><a class="button" href="https://yoomoney.ru/actions" target="_blank" style="text-decoration: none;">Юmoney</a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <ul class="list-group">
+          <li class="list-group-item"><b>E-mail</b></li>
+          <li class="list-group-item"><a class="button" href="https://e.mail.ru/" target="_blank" style="text-decoration: none;">Mail.ru</a></li>
+          <li class="list-group-item">
+            <a class="button" href="https://www.google.com/intl/ru/gmail/about/" target="_blank" style="text-decoration: none;">
+          Gmail</a></li>
+          <li class="list-group-item"><a class="button" href="https://temp-mail.org/ru/" target="_blank" style="text-decoration: none;">Temp-mail</a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <ul class="list-group">
+          <li class="list-group-item"><b>Town helpers</b></li>
+          <li class="list-group-item"><a class="button" href="https://yandex.ru/maps/225/russia/?l=sat%2Cskl&amp;ll=99.505405%2C61.698653&amp;z=3" target="_blank" style="text-decoration: none;">Яндекс карты</a></li>
+          <li class="list-group-item"><a class="button" href="https://yandex.ru/pogoda/ulyanovsk?lat=54.316855&lon=48.402557" target="_blank" style="text-decoration: none;">Яндекс погода</a></li>
+          <li class="list-group-item"> <a class="button" href="https://esia.gosuslugi.ru/login/" target="_blank" style="text-decoration: none;">ГосУслуги</a></li>
+        </ul>
+    </div>
+    </div>
 
+    <div class="row">
         <div class="col">
-        <a class="button" href="https://habr.com/ru/all/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/hb_32x32.png" class="rounded-0">
-        <span>Habr</span>   
-        </div>
-        </a>
-        </div>
+        <ul class="list-group">
+          <li class="list-group-item"><b>Music and more</b></li>
+          <li class="list-group-item"><a class="button" href="https://soundcloud.com/premori" target="_blank" style="text-decoration: none;">
+          soundcloud</a></li>
+          <li class="list-group-item"><a class="button" href="https://www.looperman.com/loops" target="_blank" style="text-decoration: none;">
+          looperman</a></li>
+          <li class="list-group-item"><a class="button" href="https://online-audio-converter.com/ru/" target="_blank" style="text-decoration: none;">online-audio-converter</a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <ul class="list-group">
+          <li class="list-group-item"><b>Forums</b></li>
+          <li class="list-group-item"><a class="button" href="https://lolz.guru/" target="_blank" style="text-decoration: none;">Lolz</a></li>
+          <li class="list-group-item"><a class="button" href="https://zelenka.guru/" target="_blank" style="text-decoration: none;">Lolz (new domen)</a></li>
+          <li class="list-group-item"><a class="button" href="https://yougame.biz/" target="_blank" style="text-decoration: none;">Yougame</a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <ul class="list-group">
+          <li class="list-group-item"><b>translator</b></li>
+          <li class="list-group-item"><a class="button" href="https://www.deepl.com/translator" target="_blank" style="text-decoration: none;">Deepl</a></li>
+        </ul>
+    </div>
+    </div>
 
+    <div class="row">
         <div class="col">
-        <a class="button" href="https://animego.org/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/ag_32x32.png" class="rounded-0">
-        <span>AnimeGo</span>
-        </div>
-        </a>
-        </div>
+        <ul class="list-group">
+          <li class="list-group-item"><b>Search Machines</b></li>
+          <li class="list-group-item"><a class="button" href="https://www.google.ru/" target="_blank" style="text-decoration: none;">Google</a></li>
+          <li class="list-group-item"><a class="button" href="https://dzen.ru/?yredirect=true" target="_blank" style="text-decoration: none;">Яндекс</a></li>
+          <li class="list-group-item"><a class="button" href="https://duckduckgo.com/" target="_blank" style="text-decoration: none;">duckduckgo</a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <ul class="list-group">
+          <li class="list-group-item"><b>Design</b></li>
+          <li class="list-group-item"><a class="button" href="https://www.figma.com/" target="_blank" style="text-decoration: none;">Figma</a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <ul class="list-group">
+          <li class="list-group-item"><b>Other</b></li>
+          <li class="list-group-item"><a class="button" href="https://github.com/" target="_blank" style="text-decoration: none;">Github</a></li>
+          <li class="list-group-item"><a class="button" href="http://192.168.0.1/" target="_blank" style="text-decoration: none;">TPlink</a></li>
+          <li class="list-group-item">
+            <a class="button" href="https://www.office.com/launch/word?ui=be-BY&rs=BY&auth=1" target="_blank" style="text-decoration: none;">Word</a></li>
+        </ul>
+    </div>
+    </div>
 
-        <div class="col">
-        <a class="button" href="https://jut.su/anime/order-by-count/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/aj_32x32.png" class="rounded-0">
-        <span>Ajutsu</span>
-        </div>
-        </a>
-        </div>
+   </div>
+</div>
 
-        <div class="col">
-        <a class="button" href="https://cloud.mail.ru/home/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/cm_32x32.png" class="rounded-0">
-        <span>Claud</span>
-        </div>
-        </a>
-        </div>
+</body> 
 
-        <div class="col">
-        <a class="button" href="https://2ip.ru/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/ip_32x32.png" class="rounded-0" width="32" height="32">
-        <span>ip2</span>
-        </div>
-        </a>
-        </div>
-        </div>
-        </div>
-
-        <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
-        <div class="col">
-        <a class="button" href="https://rutracker.org/forum/index.php" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/rt_32x32.png" class="rounded-0">
-        <span>RTracker</span>
-        </div>
-        </a>
-        </div>
-
-        <div class="col">
-        <a class="button" href="https://dropmefiles.com/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/df_32x32.png" class="rounded-0">
-        <span>dmfiles</span>   
-        </div>
-        </a>
-        </div>
-
-        <div class="col">
-        <a class="button" href="https://www.deepl.com/translator" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/dl_32x32.png" class="rounded-0">
-        <span>DeepL</span>
-        </div>
-        </a>
-        </div>
-
-        <div class="col">
-        <a class="button" href="https://www.google.com/intl/ru/gmail/about/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/gm_32x32.png" class="rounded-0">
-        <span>Gmail</span>
-        </div>
-        </a>
-        </div>
-
-        <div class="col">
-        <a class="button" href="https://yandex.ru/pogoda/ulyanovsk?lat=54.316855&lon=48.402557" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/wp_32x32.png" class="rounded-0">
-        <span>Япогода</span>
-        </div>
-        </a>
-        </div>
-
-        <div class="col">
-        <a class="button" href="https://esia.gosuslugi.ru/login/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/gs_32x32.png" class="rounded-0" width="32" height="32">
-        <span>ГосУслуги</span>
-        </div>
-        </a>
-        </div>
-        </div>
-        </div>
-
-        <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
-        <div class="col">
-        <a class="button" href="https://sirus.su/#/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/sw_32x32.png" class="rounded-0">
-        <span>SirusWoW</span>
-        </div>
-        </a>
-        </div>
-
-        <div class="col">
-        <a class="button" href="https://wowcircle.net/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/cw_32x32.png" class="rounded-0">
-        <span>Circle</span>   
-        </div>
-        </a>
-        </div>
-
-        <div class="col">
-        <a class="button" href="https://web.whatsapp.com/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/wp1_32x32.png" class="rounded-0">
-        <span>WhatsApp</span>
-        </div>
-        </a>
-        </div>
-
-        <div class="col">
-        <a class="button" href="https://www.office.com/launch/word?ui=be-BY&rs=BY&auth=1" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/wo_32x32.png" class="rounded-0">
-        <span>Word</span>
-        </div>
-        </a>
-        </div>
-
-        <div class="col">
-        <a class="button" href="https://www.kinopoisk.ru/" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/kp_32x32.png" class="rounded-0">
-        <span>Kino</span>
-        </div>
-        </a>
-        </div>
-
-        <div class="col">
-        <a class="button" href="#" target="_blank" style="text-decoration: none;">
-        <div class="alert alert-light" role="alert">
-        <img src="./S.page_files/qs_32x32.png" class="rounded-0" width="32" height="32">
-        <span>null</span>
-        </div>
-        </a>
-        </div>
-        </div>
-        </div>
-
-        </div>
-        </div>
-        </div>
-
-        </div>
-        </div>
-
-</body>
 </html>

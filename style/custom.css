@@ -1,0 +1,28 @@
+*{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+body{
+	background-color: #1d1d1d !important;
+}
+
+.list-group{
+	--bs-list-group-bg: #202020 !important;
+}
+
+.list-group-item{
+	color: #f1f1f1 !important;
+}
+
+a {
+  color: #6d6d6d !important;
+}
+
+h4{
+	color: white !important;
+}
+
+hr{
+	color: white !important;
+}
